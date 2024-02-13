@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="cinebook.js"></script>
+
+    <link rel="stylesheet" href="cinebook.css" />
+    <title>Tracker di film e serie tv</title>
+  </head>
+  <body>
+    <!-- TOP NAVIGATION -->
+    <nav>
+      <p class="benvenuto">Benvenuto nella piattaforma!🍿</p>
+      <img src="cinebook.png" alt="Logo" class="logo" />
+        <input type="text" placeholder="Cerca" class="search__input" />
+        <div class="search-options">
+          <label for="genre">Filtra per genere:</label>
+          <select id="genre">
+            <option value="action">Azione</option>
+            <option value="drama">Dramma</option>
+            <option value="sporty">Sportivo</option>
+            <option value="gangster">Gangster</option>
+            <option value="biographical">Biografico</option>
+            <option value="fantasy">Fantascienza</option>
+            <option value="oscar">Oscar</option>
+            <option value="western">Western</option>
+            <option value="horror">Horror</option>
+            <!-- Aggiungi altri generi... -->
+          </select>
+
+          <label for="year">Filtra per anno:</label>
+          <input
+            type="number"
+            id="year"
+            min="1900"
+            max="2024"
+            placeholder="Anno di uscita"
+          />
+          <button class="search-results">&rarr;</button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="results">
+      <!-- Per ogni risultato della ricerca -->
+      <div class="result-item">
+        <h3>Rocky</h3>
+        <p>Anno: 1975</p>
+        <p>Genere: Sportivo</p>
+        <p>Valutazione: 9.5</p>
+        <img src="rocky.jpg" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item2">
+        <h3>Indiana Jones</h3>
+        <p>Anno: 1985</p>
+        <p>Genere: Azione</p>
+        <p>Valutazione: 6.5</p>
+        <img src="indiana.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item3">
+        <h3>Jurassic Park</h3>
+        <p>Anno: 1993</p>
+        <p>Genere: Fantascienza</p>
+        <p>Valutazione: 8.5</p>
+        <img src="jurassic.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item4">
+        <h3>Ghostbusters</h3>
+        <p>Anno: 1984</p>
+        <p>Genere: Fantascienza</p>
+        <p>Valutazione: 8</p>
+        <img src="ghost.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item5">
+        <h3>Beverly Hills Cop</h3>
+        <p>Anno: 1984</p>
+        <p>Genere: Azione</p>
+        <p>Valutazione: 9</p>
+        <img src="beverly.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item6">
+        <h3>Il Padrino</h3>
+        <p>Anno: 1972</p>
+        <p>Genere: Dramma/Gangster</p>
+        <p>Valutazione: 10</p>
+        <img src="padrino.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item7">
+        <h3>Rambo</h3>
+        <p>Anno: 1982</p>
+        <p>Genere: Azione</p>
+        <p>Valutazione: 7.5</p>
+        <img src="rambo.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item8">
+        <h3>Scarface</h3>
+        <p>Anno: 1983</p>
+        <p>Genere: Dramma/Gangster</p>
+        <p>Valutazione: 9</p>
+        <img src="scarface.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item9">
+        <h3>Braveheart</h3>
+        <p>Anno: 1995</p>
+        <p>Genere: Biografico</p>
+        <p>Valutazione: 8</p>
+        <img src="braveheart.png" alt="Immagine del Film/Serie TV" />
+      </div>
+
+      <div class="result-item10">
+        <h3>Lo chiamavano Trinità</h3>
+        <p>Anno: 1970</p>
+        <p>Genere: Western</p>
+        <p>Valutazione: 9</p>
+        <img src="trinità.png" alt="Immagine del Film/Serie TV" />
+      </div>
+    </div>
+
+    <main class="app">
+      <!-- Ricerca risultati -->
+      <section class="search-results">
+        <h2>Risultati della Ricerca</h2>
+        <div id="results"></div>
+      </section>
+
+      <!-- Film e Serie TV Visti -->
+      <section class="watched-list">
+        <h2>Film e Serie TV Visti</h2>
+        <ul id="watchedList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 CineBook. Tutti i diritti riservati.</p>
+      <a href="informazioni.html">Informazioni su di noi</a>
+      <a href="contatti.html">Contattaci</a>
+    </footer>
+  </body>
+</html>

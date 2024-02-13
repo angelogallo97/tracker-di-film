@@ -1,0 +1,145 @@
+/*
+ * Use this CSS to learn some intersting techniques,
+ * in case you're wondering how I built the UI.
+ * Have fun! 😁
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #011b1b;
+  height: 100vh;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  background-color: rgba(3, 3, 45, 0.36);
+}
+
+input {
+  height: 55px;
+}
+
+#year {
+  height: 23px;
+}
+
+.benvenuto {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.logo {
+  height: 170px;
+  width: 300px;
+}
+
+.login {
+  display: flex;
+}
+
+.search__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  text-align: center;
+  width: 12rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(66, 73, 167);
+  transition: all 0.3s;
+}
+
+.search__input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.search__input::placeholder {
+  color: rgba(0, 1, 64, 0.703);
+}
+
+.search-results {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search-results:hover,
+.search-results:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: #777;
+}
+
+label {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.result-item img,
+.result-item2 img,
+.result-item3 img,
+.result-item4 img,
+.result-item5 img,
+.result-item6 img,
+.result-item7 img,
+.result-item8 img,
+.result-item9 img,
+.result-item10 img {
+  width: 227px;
+  height: auto;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+#results {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+/* MAIN */
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+
+  /* NOTE This creates the fade in/out anumation */
+  opacity: 0;
+  transition: all 1s;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+}
