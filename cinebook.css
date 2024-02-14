@@ -33,6 +33,60 @@ nav {
   background-color: rgba(3, 3, 45, 0.36);
 }
 
+#reel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 20px;
+}
+
+#reel_body {
+  width: 460px;
+  padding: 20px 10px;
+}
+
+#reel_box {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 600px;
+  height: 300px;
+}
+
+#banner_reel {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 600px;
+  height: 300px;
+}
+#trailer_box {
+  position: absolute;
+  top: 20px;
+  left: 640px;
+  width: 280px;
+  height: 260px;
+  background: #e2e2e2;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+#trailer_box_title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#trailer {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
 input {
   height: 55px;
 }
@@ -124,22 +178,44 @@ h3 {
   flex-wrap: wrap;
 }
 
-/* MAIN */
-.app {
+.newsletter {
   position: relative;
-  max-width: 100rem;
-  margin: 4rem auto;
-  display: grid;
-  grid-template-columns: 4fr 3fr;
-  grid-template-rows: auto repeat(3, 15rem) auto;
-  gap: 2rem;
-
-  /* NOTE This creates the fade in/out anumation */
-  opacity: 0;
-  transition: all 1s;
+  font-size: 12px;
+  width: 100%;
+  height: auto;
 }
 
-.results-container {
-  display: flex;
-  flex-wrap: wrap;
+foglio di stile dello user agent section {
+  display: block;
+}
+
+.newsletter_body {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 940px;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(3, 3, 45, 0.36);
+  padding: 20px;
+  border-top: 1px solid #626069;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.newsletter_text div,
+strong {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  vertical-align: baseline;
+  background: transparent;
 }
