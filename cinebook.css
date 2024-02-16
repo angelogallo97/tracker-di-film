@@ -219,3 +219,19 @@ strong {
   vertical-align: baseline;
   background: transparent;
 }
+
+.navbar-link {
+  color: #fff; /* Imposta il colore del testo su bianco */
+  text-decoration: none; /* Rimuove il sottolineato dai link */
+  padding: 10px 15px; /* Aggiunge spazio intorno ai link */
+  font-size: 22px;
+  transition: background-color 0.3s ease; /* Aggiunge una transizione fluida al cambio di colore di sfondo */
+}
+
+.navbar-link:hover {
+  background-color: #555; /* Cambia il colore di sfondo quando il mouse passa sopra */
+}
+
+.navbar-list {
+  list-style-type: none; /* Rimuove i pallini dalla lista */
+}
