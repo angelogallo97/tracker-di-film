@@ -86,10 +86,14 @@ ul#menu li a {
   height: 30px;
   text-align: center;
 }
-ul#menu li.active,
+
 ul#menu li:hover {
-  background-color: rgba(3, 3, 45, 0.36);
-  border-bottom: 5px solid navy;
+  background-color: navy; /* Cambia il colore di sfondo */
+  border-bottom: 5px solid transparent; /* Nascondi la linea di fondo */
+}
+
+ul#menu li a:hover {
+  color: white; /* Cambia il colore del testo */
 }
 
 input {
@@ -112,7 +116,7 @@ input {
   text-align: center;
   width: 12rem;
   border-radius: 10rem;
-  margin-right: 1rem;
+  margin-right: 10rem;
   color: rgb(0, 0, 0);
   border: 1px solid rgb(66, 73, 167);
   transition: all 0.3s;
