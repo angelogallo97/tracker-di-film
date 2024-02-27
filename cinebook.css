@@ -202,6 +202,24 @@ h3 {
   margin-right: 50px;
 }
 
+.result-serie img,
+.result-serie2 img,
+.result-serie3 img,
+.result-serie4 img,
+.result-serie5 img,
+.result-serie6 img,
+.result-serie7 img,
+.result-serie8 img,
+.result-serie9 img,
+.result-serie10 img,
+.result-serie11 img,
+.result-serie12 img {
+  width: 227px;
+  height: 330px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
 .newsletter {
   position: relative;
   font-size: 12px;
