@@ -12,153 +12,57 @@
     <title>Tracker di film</title>
   </head>
   <body>
-
     <!-- TOP NAVIGATION -->  
 
     <nav>
       <ul id="menu">
-        <a class="logo-item"><img src="" alt="Logo" class="logo" /></a>
+        <a class="logo-item"><img src="cinema.png" alt="Logo" class="logo" /></a>
         <li id="home"><a href="#">Home</a></li>
         <li id="chi_siamo"><a href="#">Chi siamo</a></li>
-        <li id="film"><a href="#">Film</a></li>
-        <li id="serie_tv"><a href="#">Serie Tv</a></li>
-        <li id="contatti"><a href="#">Contatti</a></li>
+        <li id="film"><a href="film.html">Film</a></li>
+        <li id="serie_tv"><a href="serieTv.html">Serie Tv</a></li>
+        <li id="contatti"><a href="#">Contatti</a></li>      
       </ul>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512" class="lente">
+        <path d="M448.178 602.822 316.426 471.071c26.355-33.88 42.074-76.422 42.074-122.571 0-110.28-89.72-200-200-200s-200 89.72-200 200 89.72 200 200 200c46.149 0 88.691-15.719 122.571-42.074l131.751 131.751c4.882 4.882 11.28 7.323 17.678 7.323s12.796-2.441 17.678-7.322c9.762-9.763 9.762-25.593 0-35.356M8.5 348.5c0-82.71 67.29-150 150-150s150 67.29 150 150-67.29 150-150 150-150-67.29-150-150" id="lente" fill="rgb(2, 2, 59)"></path>
+      </svg>      
     </nav>
     
-      
-        <div class="search-options">
-          <input id="search_input" type="text" placeholder="Cerca" class="search__input" />
-          <label for="genre">Filtra per genere:</label>
-          <select id="genre">
-            <option value="action">Azione</option>
-            <option value="drama">Dramma</option>
-            <option value="sporty">Sportivo</option>
-            <option value="gangster">Gangster</option>
-            <option value="biographical">Biografico</option>
-            <option value="fantasy">Fantascienza</option>
-            <option value="oscar">Oscar</option>
-            <option value="western">Western</option>
-            <option value="horror">Horror</option>
-            <!-- Aggiungi altri generi... -->
-          </select>
-          <label for="year">Filtra per anno:</label>
-          <input
-            type="number"
-            id="year"
-            min="1900"
-            max="2024"
-            placeholder="Anno di uscita"
-          />
-          <button id="myButton" class="search-results">&rarr;</button>
-        </div>
+    <header>
+      <div class="search-options">
+        <input id="search_input" type="text" placeholder="Cerca" class="search__input" />
+        <label for="genre">Filtra per genere:</label>
+        <select id="genre">
+          <option value="action">Azione</option>
+          <option value="drama">Dramma</option>
+          <option value="commedia">Commedia</option>
+          <option value="sporty">Sportivo</option>
+          <option value="gangster">Gangster</option>
+          <option value="biographical">Biografico</option>
+          <option value="fantasy">Fantascienza</option>
+          <option value="oscar">Oscar</option>
+          <option value="western">Western</option>
+          <option value="horror">Horror</option>
+          <!-- Aggiungi altri generi... -->
+        </select>
+        <label for="year">Filtra per anno:</label>
+        <input
+          type="number"
+          id="year"
+          min="1900"
+          max="2024"
+          placeholder="Anno di uscita"
+        />
+        <button id="myButton" class="search-results">&rarr;</button>
       </div>
-    </nav>
+    </div>
+    </header>
+      
+       
 
-      <!-- DIVISIONE IN SEZIONI-->
-<section class="principale">
-      <p class="titolo">I migliori film</p>
-      <div id="results">
-        <!-- Per ogni risultato della ricerca -->
-        <div class="result-item">
-          <h3>Rocky</h3>
-          <p>Anno: 1975</p>
-          <p>Genere: Sportivo</p>
-          <p>Valutazione: 9.5</p>
-          <img src="rocky.jpg" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item2">
-          <h3>Top Gun</h3>
-          <p>Anno: 1986</p>
-          <p>Genere: Azione</p>
-          <p>Valutazione: 8.5</p>
-          <img src="topgun.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item3">
-          <h3>Jurassic Park</h3>
-          <p>Anno: 1993</p>
-          <p>Genere: Fantascienza</p>
-          <p>Valutazione: 8.5</p>
-          <img src="jurassic.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item4">
-          <h3>Ghostbusters</h3>
-          <p>Anno: 1984</p>
-          <p>Genere: Fantascienza</p>
-          <p>Valutazione: 8</p>
-          <img src="ghost.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item5">
-          <h3>Beverly Hills Cop</h3>
-          <p>Anno: 1984</p>
-          <p>Genere: Azione</p>
-          <p>Valutazione: 9</p>
-          <img src="beverly.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item6">
-          <h3>Il Padrino</h3>
-          <p>Anno: 1972</p>
-          <p>Genere: Dramma/Gangster</p>
-          <p>Valutazione: 10</p>
-          <img src="padrino.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item7">
-          <h3>Rambo</h3>
-          <p>Anno: 1982</p>
-          <p>Genere: Azione</p>
-          <p>Valutazione: 7.5</p>
-          <img src="rambo.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item8">
-          <h3>Scarface</h3>
-          <p>Anno: 1983</p>
-          <p>Genere: Dramma/Gangster</p>
-          <p>Valutazione: 9</p>
-          <img src="scarface.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item9">
-          <h3>Braveheart</h3>
-          <p>Anno: 1995</p>
-          <p>Genere: Biografico</p>
-          <p>Valutazione: 8</p>
-          <img src="braveheart.png" class="locandina" alt="Immagine del Film" />
-        </div>
-    
-        <div class="result-item10">
-          <h3>Lo chiamavano Trinità</h3>
-          <p>Anno: 1970</p>
-          <p>Genere: Western</p>
-          <p>Valutazione: 9</p>
-          <img src="trinità.png" class="locandina" alt="Immagine del Film" />
-        </div>
-        
-        <div class="result-item11">
-          <h3>Pulp Fiction</h3>
-          <p>Anno: 1994</p>
-          <p>Genere: Gangster</p>
-          <p>Valutazione: 7.5</p>
-          <img src="pulp.png" class="locandina" alt="Immagine del Film" />
-        </div>
+      
 
-        <div class="result-item12">
-          <h3>Scream</h3>
-          <p>Anno: 1996</p>
-          <p>Genere: Horror</p>
-          <p>Valutazione: 8</p>
-          <img src="scream.png" class="locandina" alt="Immagine del Film" />
-        </div>
-  </div>
-</section>
-
- <!-- <section class="newsletter">
+ <section class="newsletter">
     <div class="newsletter_body">
       <div class="title">
         "Iscriviti alla nostra newsletter!"
@@ -173,10 +77,26 @@
       </div>
       <div class="btt-news">
         <i class="fas fa-envelope">
-         
         </i>
         <a href="../generic/newsletter.php">Iscriviti subito</a>
       </div>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social">
+          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" fill="white"></path>
+        </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social">
+          <path d="M18.9,1.2h3.7l-8,9.2L24,22.9h-7.4l-5.8-7.6l-6.6,7.6H0.5l8.6-9.8L0,1.2h7.6l5.2,6.9L18.9,1.2z M17.6,20.7h2L6.5,3.3H4.3 L17.6,20.7z" fill="white"></path>
+        </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"></path>
+        </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social">
+          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" fill="white"></path>
+        </svg>
+      </span>
     </div>
   </section>
 
@@ -184,15 +104,8 @@
       <p>&copy; 2024 CineBook. Tutti i diritti riservati.</p>
       <a href="informazioni.html">Informazioni su di noi</a>
       <a href="contatti.html">Contattaci</a>
-    </footer> -->
+    </footer> 
   </body>
 
   <script src="cinebook.js"></script>
 </html> 
-
-
-
-<div class="navbar-movie__menu float-end">
-  <ul class="list-inline d-flex text-uppercase m-0" id="_desktop_menu">
-    
-      
