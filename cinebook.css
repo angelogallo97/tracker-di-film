@@ -200,6 +200,8 @@ h3 {
   height: 330px;
   margin-bottom: 50px;
   margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .result-serie img,
@@ -218,6 +220,14 @@ h3 {
   height: 330px;
   margin-bottom: 50px;
   margin-right: 50px;
+}
+
+.presentazione {
+  position: relative;
+  font-size: 100px;
+  background-color: transparent;
+  width: 100%;
+  height: 800px;
 }
 
 .newsletter {
@@ -281,4 +291,47 @@ strong {
 .social {
   margin: 2px;
   padding: 2px;
+}
+
+.trailer-button,
+.trailer-button2,
+.trailer-button3,
+.trailer-button4,
+.trailer-button5,
+.trailer-button6,
+.trailer-button7,
+.trailer-button8,
+.trailer-button9,
+.trailer-button10,
+.trailer-button11,
+.trailer-button12,
+.trailer-button13,
+.trailer-button14,
+.trailer-button15,
+.trailer-button16 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(3, 3, 45, 1.36);
+  color: white;
+}
+
+.trailer-button:hover,
+.trailer-button2:hover,
+.trailer-button3:hover,
+.trailer-button4:hover,
+.trailer-button5:hover,
+.trailer-button6:hover,
+.trailer-button7:hover,
+.trailer-button8:hover,
+.trailer-button9:hover,
+.trailer-button10:hover,
+.trailer-button11:hover,
+.trailer-button12:hover,
+.trailer-button13:hover,
+.trailer-button14:hover,
+.trailer-button15:hover,
+.trailer-button16:hover {
+  outline: auto;
+  color: white;
+  cursor: pointer;
 }
