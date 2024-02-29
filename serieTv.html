@@ -11,28 +11,47 @@
     <!-- TOP NAVIGATION -->
     <nav>
       <ul id="menu">
-        <a class="logo-item"
-          ><img src="cinema.png" alt="Logo" class="logo"
-        /></a>
+        <a class="logo-item"><img src="cinema.png" alt="Logo" class="logo"/></a>
         <li id="home"><a href="cinebook.html">Home</a></li>
         <li id="chi_siamo"><a href="#">Chi siamo</a></li>
         <li id="film"><a href="film.html">Film</a></li>
         <li id="serie_tv"><a href="serieTv.html">Serie Tv</a></li>
         <li id="contatti"><a href="#">Contatti</a></li>
       </ul>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="-49 141 512 512"
-        class="lente"
-      >
-        <path
-          d="M448.178 602.822 316.426 471.071c26.355-33.88 42.074-76.422 42.074-122.571 0-110.28-89.72-200-200-200s-200 89.72-200 200 89.72 200 200 200c46.149 0 88.691-15.719 122.571-42.074l131.751 131.751c4.882 4.882 11.28 7.323 17.678 7.323s12.796-2.441 17.678-7.322c9.762-9.763 9.762-25.593 0-35.356M8.5 348.5c0-82.71 67.29-150 150-150s150 67.29 150 150-67.29 150-150 150-150-67.29-150-150"
-          id="lente"
-          fill="rgb(2, 2, 59)"
-        ></path>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512" class="lente">
+        <path d="M448.178 602.822 316.426 471.071c26.355-33.88 42.074-76.422 42.074-122.571 0-110.28-89.72-200-200-200s-200 89.72-200 200 89.72 200 200 200c46.149 0 88.691-15.719 122.571-42.074l131.751 131.751c4.882 4.882 11.28 7.323 17.678 7.323s12.796-2.441 17.678-7.322c9.762-9.763 9.762-25.593 0-35.356M8.5 348.5c0-82.71 67.29-150 150-150s150 67.29 150 150-67.29 150-150 150-150-67.29-150-150" id="lente" fill="rgb(2, 2, 59)"></path>
       </svg>
     </nav>
 
+    <header>
+      <div class="search-options">
+        <input id="search_input" type="text" placeholder="Cerca" class="search__input" />
+        <label for="genre">Filtra per genere:</label>
+        <select id="genre">
+          <option value="action">Azione</option>
+          <option value="drama">Dramma</option>
+          <option value="commedia">Commedia</option>
+          <option value="sporty">Sportivo</option>
+          <option value="gangster">Gangster</option>
+          <option value="biographical">Biografico</option>
+          <option value="fantasy">Fantascienza</option>
+          <option value="oscar">Oscar</option>
+          <option value="western">Western</option>
+          <option value="horror">Horror</option>
+          <!-- Aggiungi altri generi... -->
+        </select>
+        <label for="year">Filtra per anno:</label>
+        <input
+          type="number"
+          id="year"
+          min="1900"
+          max="2024"
+          placeholder="Anno di uscita"
+        />
+        <button id="myButton" class="search-results">&rarr;</button>
+      </div>
+    </div>
+    </header>
     <section class="principale">
         <p class="titolo">Le migliori serie Tv</p>
         <div id="results">
@@ -43,6 +62,7 @@
             <p>Anno: 1994-2004</p>
             <p>Genere: Commedia</p>
             <p>Valutazione: 10</p>
+            <button class="button-trailer">Guarda il trailer</button>
             <img src="friends.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -51,6 +71,7 @@
             <p>Anno: 2008-2013</p>
             <p>Genere: Dramma/Gangster</p>
             <p>Valutazione: 9</p>
+            <button class="button-trailer2">Guarda il trailer</button>
             <img src="breakingbad.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -59,6 +80,7 @@
             <p>Anno: 2013-2022</p>
             <p>Genere: Gangster</p>
             <p>Valutazione: 8</p>
+            <button class="button-trailer3">Guarda il trailer</button>
             <img src="peaky.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -67,6 +89,7 @@
             <p>Anno: 1990-1996</p>
             <p>Genere: Commedia</p>
             <p>Valutazione: 8</p>
+            <button class="button-trailer4">Guarda il trailer</button>
             <img src="principe.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -75,6 +98,7 @@
             <p>Anno: 2021-</p>
             <p>Genere: Azione</p>
             <p>Valutazione: 9</p>
+            <button class="button-trailer5">Guarda il trailer</button>
             <img src="lupin.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -83,6 +107,7 @@
             <p>Anno: 2015-2022</p>
             <p>Genere: Biografico</p>
             <p>Valutazione: 9</p>
+            <button class="button-trailer6">Guarda il trailer</button>
             <img src="thelast.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -91,6 +116,7 @@
             <p>Anno: 2004-2010</p>
             <p>Genere: Dramma</p>
             <p>Valutazione: 7</p>
+            <button class="button-trailer7">Guarda il trailer</button>
             <img src="lost.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -99,6 +125,7 @@
             <p>Anno: 2013-2021</p>
             <p>Genere: Biografico</p>
             <p>Valutazione: 9.5</p>
+            <button class="button-trailer8">Guarda il trailer</button>
             <img src="vikings.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -107,6 +134,7 @@
             <p>Anno: 2015-2017</p>
             <p>Genere: Biografico/Azione/Gangster</p>
             <p>Valutazione: 7</p>
+            <button class="button-trailer9">Guarda il trailer</button>
             <img src="narcos.png" class="locandina" alt="Immagine della serie" />
           </div>
   
@@ -115,6 +143,7 @@
             <p>Anno: 2005-2009 2017</p>
             <p>Genere: Dramma/Azione</p>
             <p>Valutazione: 9</p>
+            <button class="button-trailer10">Guarda il trailer</button>
             <img src="prison.png" class="locandina" alt="Immagine della serie" />
           </div>
 
@@ -123,6 +152,7 @@
             <p>Anno: 2014-2019</p>
             <p>Genere: Azione</p>
             <p>Valutazione: 7.5</p>
+            <button class="button-trailer11">Guarda il trailer</button>
             <img src="gotham.png" class="locandina" alt="Immagine della serie" />
           </div>
 
@@ -131,6 +161,7 @@
             <p>Anno: 2010-2022</p>
             <p>Genere: Fantascienza/Horror/Dramma</p>
             <p>Valutazione: 8</p>
+            <button class="button-trailer12">Guarda il trailer</button>
             <img src="walking.png" class="locandina" alt="Immagine della serie" />
           </div>
     </section>
@@ -140,5 +171,6 @@
         <a href="informazioni.html">Informazioni su di noi</a>
         <a href="contatti.html">Contattaci</a>
       </footer> 
+      <script src="cinebook.js"></script>
   </body>
 </html>

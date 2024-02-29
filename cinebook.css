@@ -220,6 +220,8 @@ h3 {
   height: 330px;
   margin-bottom: 50px;
   margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .presentazione {
@@ -331,6 +333,41 @@ strong {
 .trailer-button14:hover,
 .trailer-button15:hover,
 .trailer-button16:hover {
+  outline: auto;
+  color: white;
+  cursor: pointer;
+}
+
+.button-trailer,
+.button-trailer2,
+.button-trailer3,
+.button-trailer4,
+.button-trailer5,
+.button-trailer6,
+.button-trailer7,
+.button-trailer8,
+.button-trailer9,
+.button-trailer10,
+.button-trailer11,
+.button-trailer12 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(3, 3, 45, 1.36);
+  color: white;
+}
+
+.button-trailer:hover,
+.button-trailer2:hover,
+.button-trailer3:hover,
+.button-trailer4:hover,
+.button-trailer5:hover,
+.button-trailer6:hover,
+.button-trailer7:hover,
+.button-trailer8:hover,
+.button-trailer9:hover,
+.button-trailer10:hover,
+.button-trailer11:hover,
+.button-trailer12:hover {
   outline: auto;
   color: white;
   cursor: pointer;
