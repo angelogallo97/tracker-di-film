@@ -32,7 +32,7 @@ body {
 }
 
 nav {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
@@ -98,6 +98,7 @@ header {
 
 .lente {
   height: 20px;
+  width: 60px;
   margin-right: 220px;
 }
 
@@ -216,6 +217,42 @@ h3 {
 .result-serie10 img,
 .result-serie11 img,
 .result-serie12 img {
+  width: 227px;
+  height: 330px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.result-anime img,
+.result-anime2 img,
+.result-anime3 img,
+.result-anime4 img,
+.result-anime5 img,
+.result-anime6 img,
+.result-anime7 img,
+.result-anime8 img,
+.result-anime9 img,
+.result-anime10 img,
+.result-anime11 img,
+.result-anime12 img,
+.result-anime13 img,
+.result-anime14 img,
+.result-anime15 img,
+.result-anime16 img,
+.result-anime17 img,
+.result-anime18 img,
+.result-anime19 img,
+.result-anime20 img,
+.result-anime21 img,
+.result-anime22 img,
+.result-anime23 img,
+.result-anime24 img,
+.result-anime25 img,
+.result-anime26 img,
+.result-anime27 img,
+.result-anime28 img {
   width: 227px;
   height: 330px;
   margin-bottom: 50px;

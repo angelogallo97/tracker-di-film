@@ -11,48 +11,45 @@
      <!-- TOP NAVIGATION -->  
 
      <nav>
-        <ul id="menu">
-          <a class="logo-item"><img src="cinema.png" alt="Logo" class="logo" /></a>
-          <li id="home"><a href="cinebook.html">Home</a></li>
-          <li id="chi_siamo"><a href="#">Chi siamo</a></li>
-          <li id="film"><a href="film.html">Film</a></li>
-          <li id="serie_tv"><a href="serieTv.html">Serie Tv</a></li>
-          <li id="contatti"><a href="#">Contatti</a></li>      
-        </ul>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512" class="lente">
-          <path d="M448.178 602.822 316.426 471.071c26.355-33.88 42.074-76.422 42.074-122.571 0-110.28-89.72-200-200-200s-200 89.72-200 200 89.72 200 200 200c46.149 0 88.691-15.719 122.571-42.074l131.751 131.751c4.882 4.882 11.28 7.323 17.678 7.323s12.796-2.441 17.678-7.322c9.762-9.763 9.762-25.593 0-35.356M8.5 348.5c0-82.71 67.29-150 150-150s150 67.29 150 150-67.29 150-150 150-150-67.29-150-150" id="lente" fill="rgb(2, 2, 59)"></path>
-        </svg>      
-      </nav>
-      
-      <header>
-        <div class="search-options">
-          <input id="search_input" type="text" placeholder="Cerca" class="search__input" />
-          <label for="genre">Filtra per genere:</label>
-          <select id="genre">
-            <option value="action">Azione</option>
-            <option value="drama">Dramma</option>
-            <option value="commedia">Commedia</option>
-            <option value="sporty">Sportivo</option>
-            <option value="gangster">Gangster</option>
-            <option value="biographical">Biografico</option>
-            <option value="fantasy">Fantascienza</option>
-            <option value="oscar">Oscar</option>
-            <option value="western">Western</option>
-            <option value="horror">Horror</option>
-            <!-- Aggiungi altri generi... -->
-          </select>
-          <label for="year">Filtra per anno:</label>
-          <input
-            type="number"
-            id="year"
-            min="1900"
-            max="2024"
-            placeholder="Anno di uscita"
-          />
-          <button id="myButton" class="search-results">&rarr;</button>
-        </div>
+      <ul id="menu">
+        <a class="logo-item"><img src="cinema.png" alt="Logo" class="logo" /></a>
+        <li id="home"><a href="cinebook.html">Home</a></li>
+        <li id="chi_siamo"><a href="#">Chi siamo</a></li>
+        <li id="film"><a href="film.html">Film</a></li>
+        <li id="serie_tv"><a href="serieTv.html">Serie Tv</a></li>
+        <li id="anime"><a href="anime.html">Anime</a></li>
+        <li id="contatti"><a href="contatti.html">Contatti</a></li>      
+      </ul>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512" class="lente">
+        <path d="M448.178 602.822 316.426 471.071c26.355-33.88 42.074-76.422 42.074-122.571 0-110.28-89.72-200-200-200s-200 89.72-200 200 89.72 200 200 200c46.149 0 88.691-15.719 122.571-42.074l131.751 131.751c4.882 4.882 11.28 7.323 17.678 7.323s12.796-2.441 17.678-7.322c9.762-9.763 9.762-25.593 0-35.356M8.5 348.5c0-82.71 67.29-150 150-150s150 67.29 150 150-67.29 150-150 150-150-67.29-150-150" id="lente" fill="rgb(2, 2, 59)"></path>
+      </svg>      
+    </nav>
+
+    <header>
+      <div class="search-options">
+        <input id="search_input" type="text" placeholder="Cerca" class="search__input" />
+        <label for="genre">Filtra per genere:</label>
+        <select id="genre">
+          <option value="action">Azione</option>
+          <option value="avventura">Avventura</option>
+          <option value="drama">Dramma</option>
+          <option value="commedia">Commedia</option>
+          <option value="sporty">Sportivo</option>
+          <option value="gangster">Gangster</option>
+          <option value="biographical">Biografico</option>
+          <option value="fantasy">Fantascienza</option>
+          <option value="oscar">Oscar</option>
+          <option value="giallo">Giallo</option>
+          <option value="western">Western</option>
+          <option value="horror">Horror</option>
+          <!-- Aggiungi altri generi... -->
+        </select>
+        <label for="year">Filtra per anno:</label>
+        <input type="number" id="year" min="1900" max="2024" placeholder="Anno di uscita" />
+        <button id="myButton" class="search-results">&rarr;</button>
       </div>
-      </header>
+    </div>
+    </header>
     <section class="principale">
       <p class="titolo">I migliori film</p>
       <div id="results">
@@ -64,7 +61,7 @@
           <p>Genere: Sportivo</p>
           <p>Valutazione: 9.5</p>
           <button class="trailer-button">Guarda il trailer</button>
-          <img src="rocky.jpg" class="locandina" alt="Immagine del Film" />
+          <img src="rocky.png" class="locandina" alt="Immagine del Film" />
         </div>
 
         <div class="result-item2">
@@ -209,7 +206,7 @@
         <a href="informazioni.html">Informazioni su di noi</a>
         <a href="contatti.html">Contattaci</a>
       </footer> 
-      <script src="cinebook.js"></script>
+      <script src="film.js"></script>
   </body>
 </html>
 

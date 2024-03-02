@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cinebook.css" />
+    <title>Anime</title>
+  </head>
+  <body>
+     <!-- TOP NAVIGATION --> 
+     <nav>
+      <ul id="menu">
+        <a class="logo-item"><img src="cinema.png" alt="Logo" class="logo" /></a>
+        <li id="home"><a href="cinebook.html">Home</a></li>
+        <li id="chi_siamo"><a href="#">Chi siamo</a></li>
+        <li id="film"><a href="film.html">Film</a></li>
+        <li id="serie_tv"><a href="serieTv.html">Serie Tv</a></li>
+        <li id="anime"><a href="anime.html">Anime</a></li>
+        <li id="contatti"><a href="contatti.html">Contatti</a></li>      
+      </ul>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512" class="lente">
+        <path d="M448.178 602.822 316.426 471.071c26.355-33.88 42.074-76.422 42.074-122.571 0-110.28-89.72-200-200-200s-200 89.72-200 200 89.72 200 200 200c46.149 0 88.691-15.719 122.571-42.074l131.751 131.751c4.882 4.882 11.28 7.323 17.678 7.323s12.796-2.441 17.678-7.322c9.762-9.763 9.762-25.593 0-35.356M8.5 348.5c0-82.71 67.29-150 150-150s150 67.29 150 150-67.29 150-150 150-150-67.29-150-150" id="lente" fill="rgb(2, 2, 59)"></path>
+      </svg>      
+    </nav>
+
+    <header>
+      <div class="search-options">
+        <input id="search_input" type="text" placeholder="Cerca" class="search__input" />
+        <label for="genre">Filtra per genere:</label>
+        <select id="genre">
+          <option value="action">Azione</option>
+          <option value="avventura">Avventura</option>
+          <option value="drama">Dramma</option>
+          <option value="commedia">Commedia</option>
+          <option value="sporty">Sportivo</option>
+          <option value="gangster">Gangster</option>
+          <option value="biographical">Biografico</option>
+          <option value="fantasy">Fantascienza</option>
+          <option value="oscar">Oscar</option>
+          <option value="giallo">Giallo</option>
+          <option value="western">Western</option>
+          <option value="horror">Horror</option>
+          <!-- Aggiungi altri generi... -->
+        </select>
+        <label for="year">Filtra per anno:</label>
+        <input type="number" id="year" min="1900" max="2024" placeholder="Anno di uscita" />
+        <button id="myButton" class="search-results">&rarr;</button>
+      </div>
+    </div>
+    </header>
+
+    <section class="principale">
+      <p class="titolo">I migliori anime</p>
+      <div id="results">
+
+        <!-- Per ogni risultato della ricerca -->
+        <div class="result-anime">
+          <h3>Dragon Ball</h3>
+          <p>Anno: 1984</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 10</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="dragonball.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime2">
+          <h3>Dragon Ball Z</h3>
+          <p>Anno: 1989</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 10</p>
+          <button class="trailer-button2">Guarda il trailer</button>
+          <img src="dragonballZ.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime3">
+          <h3>Dragon Ball GT</h3>
+          <p>Anno: 1996</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 10</p>
+          <button class="trailer-button3">Guarda il trailer</button>
+          <img src="dragonballGT.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime4">
+          <h3>Dragon Ball Super</h3>
+          <p>Anno: 2015</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 10</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="dragonballsuper.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime5">
+          <h3>One Piece</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 10</p>
+          <button class="trailer-button4">Guarda il trailer</button>
+          <img src="onepiece.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime6">
+          <h3>Sampei</h3>
+          <p>Anno: 1980</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 9</p>
+          <button class="trailer-button5">Guarda il trailer</button>
+          <img src="sampei.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime7">
+          <h3>Cavalieri dello Zodiaco</h3>
+          <p>Anno: 1986</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 8</p>
+          <button class="trailer-button6">Guarda il trailer</button>
+          <img src="cavalieri.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime8">
+          <h3>Pokémon</h3>
+          <p>Anno: 1996</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 10</p>
+          <button class="trailer-button7">Guarda il trailer</button>
+          <img src="pokemon.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime9">
+          <h3>Digimon</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 9</p>
+          <button class="trailer-button8">Guarda il trailer</button>
+          <img src="digimon.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime10">
+          <h3>Lupin</h3>
+          <p>Anno: 1971</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 8</p>
+          <button class="trailer-button9">Guarda il trailer</button>
+          <img src="Lupinn.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime11">
+          <h3>Mila e Shiro</h3>
+          <p>Anno: 1984</p>
+          <p>Genere: Sportivo</p>
+          <p>Valutazione: 8</p>
+          <button class="trailer-button10">Guarda il trailer</button>
+          <img src="miloeshiro.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime12">
+          <h3>Monster Rancher</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 9</p>
+          <button class="trailer-button11">Guarda il trailer</button>
+          <img src="monster.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime13">
+          <h3>Ken</h3>
+          <p>Anno: 1983</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 8.5</p>
+          <button class="trailer-button12">Guarda il trailer</button>
+          <img src="ken.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime14">
+          <h3>Bayblade</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 9.5</p>
+          <button class="trailer-button13">Guarda il trailer</button>
+          <img src="bayblade.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime15">
+          <h3>L'Uomo Tigre</h3>
+          <p>Anno: 1969</p>
+          <p>Genere: Avventura/Sportivo</p>
+          <p>Valutazione: 8.5</p>
+          <button class="trailer-button14">Guarda il trailer</button>
+          <img src="uomotigre.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime16">
+          <h3>Holly e Benji</h3>
+          <p>Anno: 1986</p>
+          <p>Genere: Sportivo</p>
+          <p>Valutazione: 9</p>
+          <button class="trailer-button15">Guarda il trailer</button>
+          <img src="hollyebenji.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime17">
+          <h3>Yu-Gi-Oh!</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 9</p>
+          <button class="trailer-button16">Guarda il trailer</button>
+          <img src="yugi.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime18">
+          <h3>Detective Conan</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Giallo</p>
+          <p>Valutazione: 8</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="detective.png" class="locandina" alt="Immagine del Film" />
+        </div>
+    
+        <div class="result-anime19">
+          <h3>L'attacco dei giganti</h3>
+          <p>Anno: 2013</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 7.5</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="attack.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime20">
+          <h3>Naruto</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 7</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="naruto.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime21">
+          <h3>Slum Dunk</h3>
+          <p>Anno: 1993</p>
+          <p>Genere: Sportivo</p>
+          <p>Valutazione: 8.5</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="slumdunk.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime22">
+          <h3>Bleach</h3>
+          <p>Anno: 2004</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 7</p>
+          <button class="trailer-button11">Guarda il trailer</button>
+          <img src="bleach.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime23">
+          <h3>Hunter x Hunter</h3>
+          <p>Anno: 1999</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 8</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="hunter.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime24">
+          <h3>Demon Slayer</h3>
+          <p>Anno: 2019</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 7</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="demon.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime25">
+          <h3>Dr Slump e Arale</h3>
+          <p>Anno: 1981</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 7.5</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="arale.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime26">
+          <h3>Doraemon</h3>
+          <p>Anno: 1969</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 8</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="doraemon.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime27">
+          <h3>Heidi</h3>
+          <p>Anno: 1974</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 8.5</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="heidi.png" class="locandina" alt="Immagine del Film" />
+        </div>
+
+        <div class="result-anime28">
+          <h3>Ufo Robot</h3>
+          <p>Anno: 1978</p>
+          <p>Genere: Avventura</p>
+          <p>Valutazione: 7</p>
+          <button class="trailer-button">Guarda il trailer</button>
+          <img src="ufo.png" class="locandina" alt="Immagine del Film" />
+        </div>
+      </div>
+    </section>
+    <script src="anime.js"></script>
+  </body>
+</html>
