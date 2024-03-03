@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatti</title>
+
+    <link rel="stylesheet" href="cinebook.css" />
+  </head>
+  <body class="body-contatti">
+    <nav class="nav-contatti">
+      <ul id="menu">
+        <a class="logo-item"
+          ><img src="cinema.png" alt="Logo" class="logo"
+        /></a>
+        <li id="home"><a href="#">Home</a></li>
+        <li id="chi_siamo"><a href="#">Chi siamo</a></li>
+        <li id="film"><a href="film.html">Film</a></li>
+        <li id="serie_tv"><a href="serieTv.html">Serie Tv</a></li>
+        <li id="anime"><a href="anime.html">Anime</a></li>
+        <li id="contatti"><a href="contatti.html">Contatti</a></li>
+      </ul>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="-49 141 512 512"
+        class="lente"
+      >
+        <path
+          d="M448.178 602.822 316.426 471.071c26.355-33.88 42.074-76.422 42.074-122.571 0-110.28-89.72-200-200-200s-200 89.72-200 200 89.72 200 200 200c46.149 0 88.691-15.719 122.571-42.074l131.751 131.751c4.882 4.882 11.28 7.323 17.678 7.323s12.796-2.441 17.678-7.322c9.762-9.763 9.762-25.593 0-35.356M8.5 348.5c0-82.71 67.29-150 150-150s150 67.29 150 150-67.29 150-150 150-150-67.29-150-150"
+          id="lente"
+          fill="white"
+        ></path>
+      </svg>
+    </nav>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <p id="text">
+        <strong class="info">Indirizzo:</strong> Via Nome della Strada, Numero
+        Civico, Città, CAP
+      </p>
+      <p id="text"><strong class="info">Telefono:</strong> +39 0123456789</p>
+      <p id="text"><strong class="info">Email:</strong> info@ilcinema.com</p>
+      <p id="text">
+        <strong class="info">Orario di apertura:</strong> Lun-Ven: 9:00-18:00,
+        Sab: 9:00-13:00
+      </p>
+    </section>
+
+    <section id="modulo-contatto">
+      <form action="invia.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="oggetto">Curriculum:</label>
+        <input
+          type="file"
+          id="oggetto"
+          name="oggetto"
+          required
+          accept=".pdf,.doc,.docx"
+        />
+
+        <label for="messaggio">Parlaci di te:</label>
+        <textarea id="messaggio" name="messaggio" required></textarea>
+
+        <button type="submit">Invia Candidatura</button>
+      </form>
+    </section>
+
+    <footer class="footer-contatti">
+      <p>Seguici su:</p>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/ilcinema" target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://twitter.com/ilcinema" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ilcinema" target="_blank"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <footer>
+      <p>&copy; 2024 CineBook. Tutti i diritti riservati.</p>
+      <a href="informazioni.html">Informazioni su di noi</a>
+      <a href="contatti.html">Contattaci</a>
+    </footer>
+    <script src="contatti.js"></script>
+  </body>
+</html>
