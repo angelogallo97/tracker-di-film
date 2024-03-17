@@ -1,3 +1,9 @@
+//Collegamento alla pagina "Chi siamo"
+let linkChisiamo = document.getElementById("chi_siamo");
+linkChisiamo.addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "chisiamo.html";
+});
 //TRAILER FILM
 
 // Seleziona il pulsante "Visualizza trailer"
@@ -88,4 +94,92 @@ let linkContatti = document.getElementById("contatti");
 linkContatti.addEventListener("click", function (event) {
   event.preventDefault();
   window.location.href = "contatti.html";
+});
+
+//TRAMA FILM
+let tramaRocky = document.querySelector(".trama");
+tramaRocky.addEventListener("click", function () {
+  window.open("tramaRocky.html", "_blank");
+});
+
+let tramaTopGun = document.querySelector(".trama2");
+tramaTopGun.addEventListener("click", function () {
+  window.open("tramaTopGun.html", "_blank");
+});
+
+let tramaJurassicPark = document.querySelector(".trama3");
+tramaJurassicPark.addEventListener("click", function () {
+  window.open("tramaJurassicPark.html", "_blank");
+});
+
+let tramaGhostbusters = document.querySelector(".trama4");
+tramaGhostbusters.addEventListener("click", function () {
+  window.open("tramaGhostbusters.html", "_blank");
+});
+
+let tramaBeverlyHillsCop = document.querySelector(".trama5");
+tramaBeverlyHillsCop.addEventListener("click", function () {
+  window.open("tramabeverlyhillscop.html", "_blank");
+});
+
+let tramaIlPadrino = document.querySelector(".trama6");
+tramaIlPadrino.addEventListener("click", function () {
+  window.open("tramaIlPadrino.html", "_blank");
+});
+
+let tramaRambo = document.querySelector(".trama7");
+tramaRambo.addEventListener("click", function () {
+  window.open("tramaRambo.html", "_blank");
+});
+
+let tramaScarface = document.querySelector(".trama8");
+tramaScarface.addEventListener("click", function () {
+  window.open("tramaScarface.html", "_blank");
+});
+
+let tramaBraveheart = document.querySelector(".trama9");
+tramaBraveheart.addEventListener("click", function () {
+  window.open("tramaBraveHeart.html", "_blank");
+});
+
+let tramaTrinità = document.querySelector(".trama10");
+tramaTrinità.addEventListener("click", function () {
+  window.open("tramaTrinità.html", "_blank");
+});
+
+let tramaPulpfiction = document.querySelector(".trama11");
+tramaPulpfiction.addEventListener("click", function () {
+  window.open("tramaPulpfiction.html", "_blank");
+});
+
+let tramaScream = document.querySelector(".trama12");
+tramaScream.addEventListener("click", function () {
+  window.open("tramaScream.html", "_blank");
+});
+
+let tramaArmaletale = document.querySelector(".trama13");
+tramaArmaletale.addEventListener("click", function () {
+  window.open("tramaArmaletale.html", "_blank");
+});
+
+let tramaBadBoys = document.querySelector(".trama14");
+tramaBadBoys.addEventListener("click", function () {
+  window.open("tramaBadBoys.html", "_blank");
+});
+
+let tramaHarry = document.querySelector(".trama15");
+tramaHarry.addEventListener("click", function () {
+  window.open("tramaHarry.html", "_blank");
+});
+
+let tramaUnapoltrona = document.querySelector(".trama16");
+tramaUnapoltrona.addEventListener("click", function () {
+  window.open("tramaUnapoltrona.html", "_blank");
+});
+
+// Informazioni su di noi
+let Informazioni = document.getElementById("informazioni");
+Informazioni.addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "chisiamo.html";
 });

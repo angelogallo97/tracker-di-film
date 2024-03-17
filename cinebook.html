@@ -14,9 +14,8 @@
     <!-- TOP NAVIGATION -->  
     <nav>
       <ul id="menu">
-        <a class="logo-item"><img src="cinema.png" alt="Logo" class="logo" /></a>
         <li id="home"><a href="cinebook.html">Home</a></li>
-        <li id="chi_siamo"><a href="#">Chi siamo</a></li>
+        <li id="chi_siamo"><a href="chisiamo.html">Chi siamo</a></li>
         <li id="film"><a href="film.html">Film</a></li>
         <li id="serie_tv"><a href="serieTv.html">Serie Tv</a></li>
         <li id="anime"><a href="anime.html">Anime</a></li>
@@ -52,6 +51,102 @@
       </div>
     </div>
     </header>
+
+    <div class="benvenuti">
+      <h1> Benvenuti nella nostra pagina! Qui troverete la storia del cinema, serie tv e anime! Grandi appassionati, ATTENZIONE! NON FATENE ABUSO.⚠️ Non mi resta che augurarvi una buona visione🍿</h1>
+    </div>
+
+    <blockquote>
+      <p id="cit">"
+        <i id="citazioni">
+          Il cinema deve essere spettacolo, è questo che il pubblico vuole. E per me lo spettacolo più bello è quello del mito. Il cinema è mito.</i>
+      "
+      <p id="cit">(Sergio Leone)</p>
+        </p>
+    </blockquote>
+
+    <blockquote>
+      <p id="cit">"
+        <i id="citazioni">
+          Il cinema è come una vecchia puttana, come il circo e il varietà, e sa come dare molte forme di piacere.</i>
+      "
+      <p id="cit">(Federico Fellini)</p>
+        </p>
+    </blockquote>
+
+    <blockquote>
+      <p id="cit">"
+        <i id="citazioni">
+          È assolutamente evidente che l’arte del cinema si ispira alla vita, mentre la vita si ispira alla TV.</i>
+      "
+      <p id="cit">(Woody Allen)</p>
+        </p>
+    </blockquote>
+
+    <section class="quiz-section">
+        <h2>Testa le Tue Conoscenze Cinematografiche!👇🏻</h2>
+        <div class="quiz-question">
+          <p>Chi è l'attore protagonista nel film "Il Padrino"?</p>
+          <ul class="quiz-options">
+            <li onclick="risposta(this)">Marlon Brando</li>
+            <li onclick="risposta(this)">Al Pacino</li>
+            <li onclick="risposta(this)">Robert De Niro</li>
+          </ul>
+        </div>
+        
+        <div class="quiz-question">
+          <p>Chi vinse il premio Oscar come miglior film nel 1998?</p>
+          <ul class="quiz-options">
+            <li onclick="risposta2(this)">Via col vento</li>
+            <li onclick="risposta2(this)">La forma dell'acqua</li>
+            <li onclick="risposta2(this)">Titanic</li>
+          </ul>
+        </div>
+
+        <div class="quiz-question">
+          <p>Qual è stato il primo film horror a colori? </p>
+          <ul class="quiz-options">
+            <li onclick="risposta3(this)">La maledizione di Frankenstein</li>
+            <li onclick="risposta3(this)">La forma dell'acqua</li>
+            <li onclick="risposta3(this)">Il mistero del museo delle cere</li>
+          </ul>
+        </div>
+
+        <div class="quiz-question">
+          <p>In che anno viaggiano Marty e Doc in "Ritorno al futuro, parte II"?</p>
+          <ul class="quiz-options">
+            <li onclick="risposta4(this)">2016</li>
+            <li onclick="risposta4(this)">2015</li>
+            <li onclick="risposta4(this)">2014</li>
+          </ul>
+        </div>
+
+        <div class="quiz-question">
+          <p>Quale giocatore di basket è stato protagonista nel film "Space Jam"?</p>
+          <ul class="quiz-options">
+            <li onclick="risposta5(this)">Kobe Bryant</li>
+            <li onclick="risposta5(this)">Micheal Jordan</li>
+            <li onclick="risposta5(this)">Marco Bellinelli</li>
+          </ul>
+        </div>
+
+    </section>
+
+    <div class="container">
+      <div class="child"><img class="image1" src="taxidriver.png" alt="Image 1"></div>
+      <div class="child"><img class="image2" src="dicaprio.png" alt="Image 2"></div>
+      <div class="child"><img class="image3" src="arancia.meccanica.jpeg" alt="Image 3"></div>
+      <div class="child"><img class="image4" src="jimcarrey.png" alt="Image 4"></div>
+      <div class="child"><img class="image5" src="gladiatore.png" alt="Image 5"></div>
+      <div class="child"><img class="image6" src="jackiechan.png" alt="Image 6"></div>
+      <div class="child"><img class="image7" src="nottedaleoni.png" alt="Image 7"></div>
+      <div class="child"><img class="image8" src="michealfox.png" alt="Image 8"></div>
+      <div class="child"><img class="image9" src="bale.png" alt="Image 9"></div>
+      <div class="child"><img class="image10" src="nazismo.png" alt="Image 10"></div>
+      <div class="child"><img class="image11" src="mammahoperso.png" alt="Image 11"></div>
+      <div class="child"><img class="image12" src="joker.png" alt="Image 12"></div>
+      <div class="child"><img class="image13" src="felicità.png" alt="Image 13"></div>
+    </div>
     
 
  <section class="newsletter">
@@ -70,7 +165,7 @@
       <div class="btt-news">
         <i class="fas fa-envelope">
         </i>
-        <a href="../generic/newsletter.php">Iscriviti subito</a>
+        <button><a href="../generic/newsletter.php">Iscriviti subito</a></button>
       </div>
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social">
@@ -92,9 +187,16 @@
     </div>
   </section>
 
+  <section>
+    <h5 class="trailer">Trailer della settimana:</h5>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2JsTSVspgU" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
     <footer>
       <p>&copy; 2024 CineBook. Tutti i diritti riservati.</p>
-      <a href="informazioni.html">Informazioni su di noi</a>
+      <a id="informazioni" href="informazioni.html">Informazioni su di noi</a>
       <a href="contatti.html">Contattaci</a>
     </footer> 
     <script src="cinebook.js"></script>
