@@ -23,21 +23,27 @@ body {
   padding: 2rem;
 }
 
-.logo {
-  height: 55px;
-  width: 160px;
-}
-.logo-item {
-  margin-right: 150px; /* Aggiunge spazio tra il logo e le opzioni di navigazione */
-}
-
 nav {
-  display: inline-flex;
+  display: flex;
+  background-image: url(poltrone.png);
+  background-position: 0%;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   margin: 0 auto;
   background-color: rgba(3, 3, 45, 0.36);
+}
+
+.navbar-link:hover {
+  background-color: rgb(
+    157,
+    151,
+    151
+  ); /* Cambia il colore di sfondo quando il mouse passa sopra */
+}
+
+.navbar-list {
+  list-style-type: none; /* Rimuove i pallini dalla lista */
 }
 
 ul#menu {
@@ -49,6 +55,7 @@ ul#menu {
   list-style-type: none;
   display: flex;
   align-items: center;
+  margin-left: 210px;
 }
 ul#menu li {
   background-color: rgba(3, 3, 45, 0.36);
@@ -87,6 +94,16 @@ input {
   height: 23px;
 }
 
+.benvenuti {
+  color: white;
+  background-color: rgba(2, 2, 34, 0.951);
+  border: 1px solid rgba(2, 2, 34, 0.951);
+  padding: 50px;
+  margin: 12px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -97,9 +114,9 @@ header {
 }
 
 .lente {
-  height: 20px;
+  height: 27px;
   width: 60px;
-  margin-right: 220px;
+  margin-right: 170px;
 }
 
 #lente:hover {
@@ -147,6 +164,94 @@ header {
   color: #777;
 }
 
+/*Sezione Quiz*/
+.quiz-section {
+  background-color: rgba(3, 3, 45, 1.36);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.quiz-section h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-top: 8px;
+}
+
+.quiz-question {
+  padding: 20px;
+}
+
+.quiz-question p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.conoscenze {
+  color: rgba(3, 3, 45, 1.36);
+  font-size: xx-large;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quiz-options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-options li {
+  font-size: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.quiz-options li:hover {
+  background-color: rgb(51, 51, 197);
+}
+
+.quiz-options li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.quiz-options li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/**/
+
+#cit {
+  color: black;
+  font-size: 20px;
+}
+
+blockquote {
+  border-left: 4px solid rgb(51, 51, 197);
+  padding: 20px 50px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 10em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+#citazioni {
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+}
+
 label {
   color: white;
   font-size: 1.7rem;
@@ -154,7 +259,18 @@ label {
 }
 
 .principale {
-  background-color: rgba(3, 3, 45, 0.36);
+  background-color: #26485dea;
+  height: 2200px;
+}
+
+.principale-serie {
+  background-color: #26485dea;
+  height: 1800px;
+}
+
+.principale-anime {
+  background-color: #26485dea;
+  height: 3800px;
 }
 
 #results {
@@ -179,6 +295,10 @@ label {
 
 h3 {
   font-size: 20px;
+}
+
+#color {
+  color: whitesmoke;
 }
 
 .result-item img,
@@ -307,24 +427,25 @@ strong {
   background: transparent;
 }
 
+footer {
+  margin-top: 20px;
+  background-color: rgba(3, 3, 45, 1.36);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: medium;
+}
+
+strong {
+  color: white;
+}
+
 .navbar-link {
   color: #fff; /* Imposta il colore del testo su bianco */
   text-decoration: none; /* Rimuove il sottolineato dai link */
   padding: 10px 15px; /* Aggiunge spazio intorno ai link */
   font-size: 22px;
   transition: background-color 0.3s ease; /* Aggiunge una transizione fluida al cambio di colore di sfondo */
-}
-
-.navbar-link:hover {
-  background-color: rgb(
-    157,
-    151,
-    151
-  ); /* Cambia il colore di sfondo quando il mouse passa sopra */
-}
-
-.navbar-list {
-  list-style-type: none; /* Rimuove i pallini dalla lista */
 }
 
 .social {
@@ -354,6 +475,28 @@ strong {
   color: white;
 }
 
+.trama,
+.trama2,
+.trama3,
+.trama4,
+.trama5,
+.trama6,
+.trama7,
+.trama8,
+.trama9,
+.trama10,
+.trama11,
+.trama12,
+.trama13,
+.trama14,
+.trama15,
+.trama16 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(3, 3, 45, 1.36);
+  color: white;
+}
+
 .trailer-button:hover,
 .trailer-button2:hover,
 .trailer-button3:hover,
@@ -370,6 +513,27 @@ strong {
 .trailer-button14:hover,
 .trailer-button15:hover,
 .trailer-button16:hover {
+  outline: auto;
+  color: white;
+  cursor: pointer;
+}
+
+.trama:hover,
+.trama2:hover,
+.trama3:hover,
+.trama4:hover,
+.trama5:hover,
+.trama6:hover,
+.trama7:hover,
+.trama8:hover,
+.trama9:hover,
+.trama10:hover,
+.trama11:hover,
+.trama12:hover,
+.trama13:hover,
+.trama14:hover,
+.trama15:hover,
+.trama16:hover {
   outline: auto;
   color: white;
   cursor: pointer;
@@ -408,4 +572,402 @@ strong {
   outline: auto;
   color: white;
   cursor: pointer;
+}
+
+.play,
+.play2,
+.play3,
+.play4,
+.play5,
+.play6,
+.play7,
+.play8,
+.play9,
+.play10,
+.play11,
+.play12,
+.play13,
+.play14,
+.play15,
+.play16,
+.play17,
+.play18,
+.play19,
+.play20,
+.play21,
+.play22,
+.play23,
+.play24,
+.play25,
+.play26,
+.play27,
+.play28 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 20px;
+  border-radius: 7px;
+  background-color: rgba(3, 3, 45, 1.36);
+  color: white;
+}
+
+.play:hover,
+.play2:hover,
+.play3:hover,
+.play4:hover,
+.play5:hover,
+.play6:hover,
+.play7:hover,
+.play8:hover,
+.play9:hover,
+.play10:hover,
+.play11:hover,
+.play12:hover,
+.play13:hover,
+.play14:hover,
+.play15:hover,
+.play16:hover,
+.play17:hover,
+.play18:hover,
+.play19:hover,
+.play20:hover,
+.play21:hover,
+.play22:hover,
+.play23:hover,
+.play24:hover,
+.play25:hover,
+.play26:hover,
+.play27:hover,
+.play28:hover {
+  outline: auto;
+  color: white;
+  cursor: pointer;
+}
+
+.avvia_puntata,
+.avvia_puntata2,
+.avvia_puntata3,
+.avvia_puntata4,
+.avvia_puntata5,
+.avvia_puntata6,
+.avvia_puntata7,
+.avvia_puntata8,
+.avvia_puntata9,
+.avvia_puntata10,
+.avvia_puntata11,
+.avvia_puntata12,
+.avvia_puntata13,
+.avvia_puntata14,
+.avvia_puntata15,
+.avvia_puntata16,
+.avvia_puntata17,
+.avvia_puntata18,
+.avvia_puntata19,
+.avvia_puntata20,
+.avvia_puntata21,
+.avvia_puntata22,
+.avvia_puntata23,
+.avvia_puntata24,
+.avvia_puntata25,
+.avvia_puntata26,
+.avvia_puntata27,
+.avvia_puntata28 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 25px;
+  background-color: rgba(3, 3, 45, 1.36);
+  color: white;
+}
+
+.avvia_puntata:hover,
+.avvia_puntata2:hover,
+.avvia_puntata3:hover,
+.avvia_puntata4:hover,
+.avvia_puntata5:hover,
+.avvia_puntata6:hover,
+.avvia_puntata7:hover,
+.avvia_puntata8:hover,
+.avvia_puntata9:hover,
+.avvia_puntata10:hover,
+.avvia_puntata11:hover,
+.avvia_puntata12:hover,
+.avvia_puntata13:hover,
+.avvia_puntata14:hover,
+.avvia_puntata15:hover,
+.avvia_puntata16:hover,
+.avvia_puntata17:hover,
+.avvia_puntata18:hover,
+.avvia_puntata19:hover,
+.avvia_puntata20:hover,
+.avvia_puntata21:hover,
+.avvia_puntata22:hover,
+.avvia_puntata23:hover,
+.avvia_puntata24:hover,
+.avvia_puntata25:hover,
+.avvia_puntata26:hover,
+.avvia_puntata27:hover,
+.avvia_puntata28:hover {
+  cursor: pointer;
+}
+
+/* Sezione Contatti */
+#contatti {
+  margin-top: 20px;
+}
+
+#contatti h2 {
+  color: white;
+  border-bottom: 2px solid whitesmoke;
+  padding-bottom: 10px;
+}
+
+.info {
+  font-size: 22px;
+}
+
+#contatti p {
+  margin: 5px 0;
+}
+
+/* Modulo di Contatto */
+#modulo-contatto {
+  margin-top: 20px;
+}
+
+.nav-contatti {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.body-contatti {
+  background-image: url(blu.png);
+  background-size: cover;
+  background-size: 100%;
+}
+
+.lente-contatti {
+  color: white;
+}
+
+#modulo-contatto h2 {
+  color: white;
+  border-bottom: 2px solid whitesmoke;
+  padding-bottom: 10px;
+}
+
+#modulo-contatto form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+#modulo-contatto label {
+  font-weight: bold;
+}
+
+#text {
+  font-size: 15px;
+}
+
+#modulo-contatto input[type="file"],
+#modulo-contatto input[type="email"],
+#modulo-contatto textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+#modulo-contatto button {
+  padding: 10px 20px;
+  background-color: rgba(225, 225, 225, 0.769);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#modulo-contatto button:hover {
+  background-color: rgba(220, 220, 220, 0.45);
+}
+
+/* Footer */
+.footer-contatti {
+  margin-top: 20px;
+  background-color: rgba(220, 220, 220, 0.45);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: medium;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Regola l'altezza del contenitore a 100% dell'altezza della finestra */
+}
+
+h5 {
+  color: black;
+  font-size: medium;
+}
+
+/* IMMAGINI HOME */
+.container {
+  display: grid;
+  background-image: url(collage.png);
+  background-size: 66%;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Colonne flessibili */
+  grid-gap: 20px; /* Spazio tra le colonne */
+}
+
+.child {
+  grid-column-start: 2; /* Inizia dalla seconda colonna */
+}
+
+.image1 {
+  margin-left: 500px;
+}
+
+.image2 {
+  margin-left: 264px;
+  margin-top: -24px;
+}
+
+.image3 {
+  margin-left: 500px;
+  margin-top: -25px;
+}
+
+.image4 {
+  margin-left: 873px;
+  margin-top: -25px;
+}
+
+.image5 {
+  margin-left: 576px;
+  margin-top: -25px;
+}
+
+.image6 {
+  margin-left: 293px;
+  margin-top: -25px;
+}
+
+.image7 {
+  margin-left: 575px;
+  margin-top: -25px;
+}
+
+.image8 {
+  margin-left: 292px;
+  margin-top: -25px;
+}
+
+.image9 {
+  margin-left: 575px;
+  margin-top: -25px;
+}
+
+.image10 {
+  margin-left: 290px;
+  margin-top: -25px;
+}
+
+.image11 {
+  margin-left: 575px;
+  margin-top: -25px;
+}
+
+.image12 {
+  margin-left: 138px;
+  margin-top: -25px;
+}
+
+.image13 {
+  margin-left: 575px;
+  margin-top: -25px;
+}
+
+.child img {
+  height: 420px; /* Imposta l'altezza a 200 pixel */
+  width: auto; /* Mantiene l'aspetto originale dell'immagine */
+}
+
+.child img {
+  transition: transform 0.5s ease; /* Aggiunge una transizione fluida */
+}
+
+.child img:hover {
+  transform: scale(
+    1.1
+  ); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+}
+
+.sinistra,
+.destra {
+  width: calc(50% - 20px);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.destra {
+  margin-left: 700px;
+  display: flex;
+}
+.foto {
+  max-width: 300px;
+  height: auto;
+  border-radius: 85px;
+}
+
+h4 {
+  text-align: left;
+  color: black;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: 9px solid orange;
+  padding: 15px;
+}
+
+#h1 {
+  color: black;
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.viola {
+  border-left: 9px solid purple;
+}
+
+.verde {
+  border-left: 9px solid green;
+}
+
+.rosa {
+  border-left: 9px solid pink;
 }

@@ -176,10 +176,3 @@ let tramaUnapoltrona = document.querySelector(".trama16");
 tramaUnapoltrona.addEventListener("click", function () {
   window.open("tramaUnapoltrona.html", "_blank");
 });
-
-// Informazioni su di noi
-let Informazioni = document.getElementById("informazioni");
-Informazioni.addEventListener("click", function (event) {
-  event.preventDefault();
-  window.location.href = "chisiamo.html";
-});

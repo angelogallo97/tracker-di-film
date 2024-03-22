@@ -66,13 +66,6 @@ linkContatti.addEventListener("click", function (event) {
   window.location.href = "contatti.html";
 });
 
-//Collegamento alla pagina "Chi siamo"
-let linkChisiamo = document.getElementById("chi_siamo");
-linkChisiamo.addEventListener("click", function (event) {
-  event.preventDefault();
-  window.location.href = "chisiamo.html";
-});
-
 // Informazioni su di noi
 let Informazioni = document.getElementById("informazioni");
 Informazioni.addEventListener("click", function (event) {
