@@ -25,7 +25,7 @@ body {
 
 nav {
   display: flex;
-  background-image: url(poltrone.png);
+  background-image: url(png/poltrone.png);
   background-position: 0%;
   justify-content: space-between;
   align-items: center;
@@ -263,11 +263,6 @@ label {
   height: 2200px;
 }
 
-.principale-serie {
-  background-color: #26485dea;
-  height: 1800px;
-}
-
 .principale-anime {
   background-color: #26485dea;
   height: 3800px;
@@ -336,7 +331,11 @@ h3 {
 .result-serie9 img,
 .result-serie10 img,
 .result-serie11 img,
-.result-serie12 img {
+.result-serie12 img,
+.result-serie13 img,
+.result-serie14 img,
+.result-serie15 img,
+.result-serie16 img {
   width: 227px;
   height: 330px;
   margin-bottom: 50px;
@@ -550,7 +549,11 @@ strong {
 .button-trailer9,
 .button-trailer10,
 .button-trailer11,
-.button-trailer12 {
+.button-trailer12,
+.button-trailer13,
+.button-trailer14,
+.button-trailer15,
+.button-trailer16 {
   margin-top: 5px;
   margin-bottom: 5px;
   background-color: rgba(3, 3, 45, 1.36);
@@ -568,7 +571,11 @@ strong {
 .button-trailer9:hover,
 .button-trailer10:hover,
 .button-trailer11:hover,
-.button-trailer12:hover {
+.button-trailer12:hover,
+.button-trailer13:hover,
+.button-trailer14:hover,
+.button-trailer15:hover,
+.button-trailer16:hover {
   outline: auto;
   color: white;
   cursor: pointer;
@@ -744,7 +751,7 @@ strong {
 }
 
 .body-contatti {
-  background-image: url(blu.png);
+  background-image: url(png/blu.png);
   background-size: cover;
   background-size: 100%;
 }
@@ -834,7 +841,7 @@ h5 {
 /* IMMAGINI HOME */
 .container {
   display: grid;
-  background-image: url(collage.png);
+  background-image: url(png/collage.png);
   background-size: 66%;
   grid-template-columns: repeat(
     auto-fit,

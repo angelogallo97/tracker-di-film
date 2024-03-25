@@ -59,6 +59,25 @@ trailerTheWalking.addEventListener("click", function () {
   window.open("https://www.youtube.com/watch?v=Lflm3Z7uR1M", "_blank");
 });
 
+let trailerTheLastofUs = document.querySelector(".button-trailer13");
+trailerTheLastofUs.addEventListener("click", function () {
+  window.open("https://www.youtube.com/watch?v=ZCdcqUMzGGk", "_blank");
+});
+
+let trailerIltronodiSpade = document.querySelector(".button-trailer14");
+trailerIltronodiSpade.addEventListener("click", function () {
+  window.open("https://www.youtube.com/watch?v=ncZ4SzSRTdA", "_blank");
+});
+
+let trailerLaCasadiCarta = document.querySelector(".button-trailer15");
+trailerLaCasadiCarta.addEventListener("click", function () {
+  window.open("https://www.youtube.com/watch?v=M8tbvWujpWA", "_blank");
+});
+
+let trailerIsoprano = document.querySelector(".button-trailer16");
+trailerIsoprano.addEventListener("click", function () {
+  window.open("https://www.youtube.com/watch?v=-wLu5yEGMTY", "_blank");
+});
 //Collegamento alla pagina "Contatti"
 let linkContatti = document.getElementById("contatti");
 linkContatti.addEventListener("click", function (event) {
