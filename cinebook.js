@@ -218,11 +218,68 @@ function risposta10(selectedOption) {
   let selectedAnswer = selectedOption.textContent.trim();
   if (selectedAnswer === "Bellaaaaaaa") {
     alert(
-      "✅Risposta corretta! Bellaaaaaaa è la scena che rese celebre il film 'Scary movie'."
+      "✅Risposta corretta! Bellaaaaaaa è l'esclamazione che rese celebre il film 'Scary movie'."
     );
   } else {
     alert(
       "❌Risposta sbagliata! Bellaaaaaaa è la scena che rese celebre il film 'Scary movie'."
+    );
+  }
+}
+
+function risposta11(selectedOption) {
+  let selectedAnswer = selectedOption.textContent.trim();
+  if (selectedAnswer === "La vita è bella") {
+    alert(
+      "✅Risposta corretta! 'La vita è bella' è il film con cui Roberto Benigni vinse il premio Oscar."
+    );
+  } else {
+    alert(
+      "❌Risposta sbagliata! 'La vita è bella' è il film con cui Roberto Benigni vinse il premio Oscar."
+    );
+  }
+}
+
+function risposta12(selectedOption) {
+  let selectedAnswer = selectedOption.textContent.trim();
+  if (selectedAnswer === "Super Sayan") {
+    alert(
+      "✅Risposta corretta! Super Sayan è la famosa trasformazione nell'anime di DragonBall."
+    );
+  } else {
+    alert(
+      "❌Risposta sbagliata! Super Sayan è la famosa trasformazione nell'anime di DragonBall."
+    );
+  }
+}
+
+function risposta13(selectedOption) {
+  let selectedAnswer = selectedOption.textContent.trim();
+  if (selectedAnswer === "Scar") {
+    alert("✅Risposta corretta! Scar è l'antagonista nel film 'Il re leone'.");
+  } else {
+    alert("❌Risposta sbagliata! Scar è l'antagonista nel film 'Il re leone'.");
+  }
+}
+
+function risposta14(selectedOption) {
+  let selectedAnswer = selectedOption.textContent.trim();
+  if (selectedAnswer === "2018") {
+    alert("✅Risposta corretta! Nel 2018 vinse il premio Oscar.");
+  } else {
+    alert("❌Risposta sbagliata! Nel 2018 vinse il premio Oscar.");
+  }
+}
+
+function risposta15(selectedOption) {
+  let selectedAnswer = selectedOption.textContent.trim();
+  if (selectedAnswer === "Katharine Hepburn") {
+    alert(
+      "✅Risposta corretta! Katharine Hepburn è l'attrice che detiene il record di premi Oscar."
+    );
+  } else {
+    alert(
+      "❌Risposta sbagliata!  Katharine Hepburn è l'attrice che detiene il record di premi Oscar."
     );
   }
 }
